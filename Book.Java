@@ -1,6 +1,6 @@
 public class Book {
 
-    private String bookId;
+    private String bookId; // Each bookId is unique and will not be duplicated.
     private String bookName;
     private String author;
     private String category;
@@ -35,7 +35,7 @@ public class Book {
     }
 
     public void setBookId(String bookId) {
-        this.bookId = bookId;
+        this.bookId = bookId; // The latter needs to check that the bookId is unique.
     }
 
     public void setAuthor(String author) {
