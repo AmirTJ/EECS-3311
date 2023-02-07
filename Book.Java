@@ -34,6 +34,10 @@ public class Book {
     public int getLend() {
         return lend;
     }
+    
+    public double getPrice(){
+        return price;
+    }
 
     public void setBookName(String bookName) {
         this.bookName = bookName;
@@ -53,5 +57,9 @@ public class Book {
 
     public void setLend(int lend) {
         this.lend = lend;
+    }
+    
+    public void setPrice(double price){
+        this.price = price;
     }
 }
