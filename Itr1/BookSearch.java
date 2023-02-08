@@ -14,7 +14,7 @@ public class BookSearch extends bookOrganization {
         boolean bookFound = false;
         for (int i = 0; i < bookShelf.size(); i++) 
         {
-            Book book = bookShelf.get(i);
+            Book book = bookShelf[i];
             if (book.getAuthor().equalsIgnoreCase(searchResult)||book.getBookId().equalsIgnoreCase(searchResult)||book.getBookName().equalsIgnoreCase(searchResult))
             {
                 System.out.println("Book Name: " + book.getBookName());
