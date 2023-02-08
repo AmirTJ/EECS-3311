@@ -17,17 +17,24 @@ A Library Management System (LMS) is a software application for organizing and m
 * The program will follow agile process and will be availabe soon enough after the first iteration it can be executed
 
 
-### Executing program
+### Itr0
+* For iteration 0 the basic information of the project and group members are shown in the file Itr0 
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+### Itr1
+### Classes
+* Book
+* BookOrganization
+* BSR (Booking Study Room)
 
-## Authors
+#### Book
+> The class Book has instance variables to store information about a book such as the book's ID (bookId), name (bookName), author (author), category (category), and price (price). The "lend" variable stores information about whether the book is currently lent or not. The class also includes getter and setter methods for all its instance variables, as well as a "toString()" method that returns a string representation of a Book object.
+
+#### BookOrganization
+> This class provides a way to manage a collection of books represented by the class Book. The class uses an ArrayList data structure to store instances of the Book class. The booksOrganization class contains methods to add books to the collection, delete books from the collection, and remove all books from the collection. Each method performs the corresponding operation and prints a message indicating the outcome of the operation.
+
+#### BSR
+> This class allows users to choose between three options: 1) book a room, 2) check the availability of rooms, and 3) exit the process. The system tracks the availability of 10 rooms using a boolean array. If a room is available, the user can reserve it by entering the room number. The system will then print either a successful booking message or an error message if the room is already booked or if the entered room number is invalid.
 
 
-## Version History
 
 
