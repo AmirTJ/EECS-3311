@@ -1,0 +1,34 @@
+
+**Here is the given log for the class BSR which shows the functionality of booking a study room system**
+- Starting execution of BSR program
+- Initializing roomNumbers with value 10 and rooms array with 10 boolean elements
+- Entering main loop
+- Printing options to the user
+- User entered choice 1
+- Calling bookingRoom() method
+- Asking user for the room number to be reserved
+- User entered room number 5
+- Checking if room 5 is available
+- Room 5 is available
+- Room 5 is reserved
+- Returning to main loop
+- Printing options to the user
+- User entered choice 2
+- Calling availability() method 
+- Printing the availability status of all rooms
+- Room 1: Available
+- Room 2: Available
+- Room 3: Available
+- Room 4: Available
+- Room 5: Booked
+- Room 6: Available
+- Room 7: Available
+- Room 8: Available
+- Room 9: Available
+- Room 10: Available
+- Returning to main loop
+- Printing options to the user
+- User entered choice 3
+- Exiting the program with exit code 0
+- BSR program execution completed.
+
