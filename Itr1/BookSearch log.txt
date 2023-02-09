@@ -1,0 +1,9 @@
+1.  We first created a BookSearch class
+
+2.  Then, in order to make it easier for readers to search 
+    we created a method that allows people using the system to find the book,
+    whether they are searching by ID or author name or other key information.
+
+3.  Of course, when the book is not found, our system will prompt the user,
+     so that the user can check if the keyword is wrong and correct the keyword to search again.
+ 
