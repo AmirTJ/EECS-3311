@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 // import java.util.Scanner;
 
-public class BookSearch extends BookOrganization {
+public class BookSearch extends booksOrganization {
 
     private ArrayList<Book> bookShelf;
 
