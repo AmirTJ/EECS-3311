@@ -9,6 +9,15 @@ public class BookSearch extends BookOrganization {
         super();
     }
 
+    public Book searchById(String Id) {
+        for (Book book : this.bookShelf) {
+            if (book.getBookId().equals(Id)) {
+                return book;
+            }
+        }
+        return null;
+    }
+
     public Book searchByName(String title) {
         for (Book book : this.bookShelf) {
             if (book.getBookName().equals(title)) {

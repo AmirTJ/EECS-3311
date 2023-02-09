@@ -34,8 +34,8 @@ public class Book {
     public int getLend() {
         return lend;
     }
-    
-    public double getPrice(){
+
+    public double getPrice() {
         return price;
     }
 
@@ -58,17 +58,17 @@ public class Book {
     public void setLend(int lend) {
         this.lend = lend;
     }
-    
-    public void setPrice(double price){
+
+    public void setPrice(double price) {
         this.price = price;
     }
-    
-     @Override
+
+    @Override
     public String toString() {
-        return "Book Name: " + bookName  +
-               ",  Book ID: " + bookId  +
-               ",  Author: " + author  +
-               ",  Category: " + category  +
-               ",  Price: " + price +"\n";
+        return "Book Name: " + bookName +
+                ",  Book ID: " + bookId +
+                ",  Author: " + author +
+                ",  Category: " + category +
+                ",  Price: " + price + "\n";
     }
 }
