@@ -48,6 +48,8 @@ public class BookSearch extends booksOrganization {
     }
 
     /*
+     * Version 2:
+     *
      * public BookSearch(ArrayList<Book> bookShelf) {
      * Scanner s = new Scanner(System.in);
      * System.out.println("Enter the String for search (author, id or bookName): ");
