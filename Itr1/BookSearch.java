@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+// import java.util.ArrayList;
 // import java.util.Scanner;
 
 public class BookSearch extends booksOrganization {
@@ -10,6 +10,11 @@ public class BookSearch extends booksOrganization {
         for (Book book : bookShelf) {
             if (book.getBookId().equalsIgnoreCase(Id)) {
                 System.out.println("book found");
+                System.out.println("Book Name: " + book.getBookName());
+                System.out.println("Author: " + book.getAuthor());
+                System.out.println("Book ID: " + book.getBookId());
+                System.out.println("Category: " + book.getCategory());
+                System.out.println("Price: " + book.getPrice());
                 return book;
             }
         }System.out.println("book not found");
@@ -19,6 +24,12 @@ public class BookSearch extends booksOrganization {
     public Book searchByName(String title) {
         for (Book book : bookShelf) {
             if (book.getBookName().equalsIgnoreCase(title)) {
+                System.out.println("book found");
+                System.out.println("Book Name: " + book.getBookName());
+                System.out.println("Author: " + book.getAuthor());
+                System.out.println("Book ID: " + book.getBookId());
+                System.out.println("Category: " + book.getCategory());
+                System.out.println("Price: " + book.getPrice());
                 return book;
             }
         }
@@ -28,25 +39,44 @@ public class BookSearch extends booksOrganization {
         }
     
 
-    public ArrayList<Book> searchByAuthor(String author) {
-        ArrayList<Book> results = new ArrayList<Book>();
-        for (Book book : bookShelf) {
-            if (book.getAuthor().equalsIgnoreCase(author)) {
-                results.add(book);
+        public Book searchByAuthor(String author) {
+            for (Book book : bookShelf) {
+                if (book.getBookName().equalsIgnoreCase(author)) {
+                    System.out.println("book found");
+                    System.out.println("Book Name: " + book.getBookName());
+                    System.out.println("Author: " + book.getAuthor());
+                    System.out.println("Book ID: " + book.getBookId());
+                    System.out.println("Category: " + book.getCategory());
+                    System.out.println("Price: " + book.getPrice());
+                    return book;
+                }
             }
-        }
-        return results;
-    }
+           
+        System.out.println("book not found");
+            return null;
+            }
 
-    public ArrayList<Book> searchByCategory(String category) {
-        ArrayList<Book> results = new ArrayList<Book>();
-        for (Book book : bookShelf) {
-            if (book.getCategory().equalsIgnoreCase(category)) {
-                results.add(book);
-            }
-        }
-        return results;
-    }
+
+
+
+         public Book searchByCategory(String category) {
+            for (Book book : bookShelf) {
+                if (book.getBookName().equalsIgnoreCase(category)) {
+                        System.out.println("book found");
+                        System.out.println("Book Name: " + book.getBookName());
+                        System.out.println("Author: " + book.getAuthor());
+                        System.out.println("Book ID: " + book.getBookId());
+                        System.out.println("Category: " + book.getCategory());
+                        System.out.println("Price: " + book.getPrice());
+                        return book;
+                    }
+                }
+               
+            System.out.println("book not found");
+                return null;
+                }
+
+  
 
     /*
      * Version 2:
