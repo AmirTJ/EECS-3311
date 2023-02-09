@@ -2,15 +2,12 @@ import java.util.ArrayList;
 // import java.util.Scanner;
 
 public class BookSearch extends booksOrganization {
-
-    private ArrayList<Book> bookShelf;
-
     public BookSearch() {
         super();
     }
 
     public Book searchById(String Id) {
-        for (Book book : this.bookShelf) {
+        for (Book book : bookShelf) {
             if (book.getBookId().equals(Id)) {
                 return book;
             }
@@ -19,7 +16,7 @@ public class BookSearch extends booksOrganization {
     }
 
     public Book searchByName(String title) {
-        for (Book book : this.bookShelf) {
+        for (Book book : bookShelf) {
             if (book.getBookName().equals(title)) {
                 return book;
             }
@@ -29,7 +26,7 @@ public class BookSearch extends booksOrganization {
 
     public ArrayList<Book> searchByAuthor(String author) {
         ArrayList<Book> results = new ArrayList<Book>();
-        for (Book book : this.bookShelf) {
+        for (Book book : bookShelf) {
             if (book.getAuthor().equals(author)) {
                 results.add(book);
             }
@@ -39,7 +36,7 @@ public class BookSearch extends booksOrganization {
 
     public ArrayList<Book> searchByCategory(String category) {
         ArrayList<Book> results = new ArrayList<Book>();
-        for (Book book : this.bookShelf) {
+        for (Book book : bookShelf) {
             if (book.getCategory().equals(category)) {
                 results.add(book);
             }
