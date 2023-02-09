@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class booksOrganization {
 
-	private ArrayList<Book> bookShelf = new ArrayList<>();
+	public ArrayList<Book> bookShelf = new ArrayList<>();
 
 	public ArrayList<Book> getBooks() {
 		return this.bookShelf;
