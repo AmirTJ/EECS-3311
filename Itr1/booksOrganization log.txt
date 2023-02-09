@@ -1,0 +1,15 @@
+Qisen Zhong log:
+1:
+  I build the booksOrganization class first, and we decided to use arrayList as collection. Then, I choose to write addBooks function and removeAllbooks function. 
+After i finished my work, i upload it to the github website and waiting for my teammates to upload his part. The planning time for the booksOrganization class is 
+three days, we actually use one and half days.
+
+2:
+  We try to find out what is wiki part in iteration 1. And we figure out it is the description of our product. Hopefully, we can pass our demo to the client team in the lab.
+
+Yunfei cao log:
+1. Zhong has written two functions which are addBooks function and removeAllbooks function, so to make sure this booksOrganization class more better, I add the function 
+  deleteBook which can delete the book according to the book id and book name. I finish this work for half day, and the start to check this code.
+
+2.The day 2, to make sure this code follow the solid principles, we do some change of this code, so we just submit the final version, this spend us 1 day. And we upload 
+it to the Github.
