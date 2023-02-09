@@ -5,7 +5,7 @@ public class Book {
     private String author;
     private String category;
     private int lend = 0; // Determine whether the book is lent or not, yes for 1, default for 0.
-    public double price;
+    public double price = 0;
 
     public Book(String bookId, String bookName, String author, String category, double price) {
         this.bookId = bookId;
