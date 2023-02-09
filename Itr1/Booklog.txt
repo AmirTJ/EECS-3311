@@ -1,0 +1,9 @@
+1. I built the book class first.
+Immediately after that we wanted to write a class for searching books, but we hadn't decided which one to use for the book collection. 
+After thinking about the speed of various algorithms, we decided to use arrylist as the collection.
+
+
+2. To facilitate book search, I added a new variable for book with bookId, each bookId is unique. 
+Right now our group is not sure what the book's database looks like, so we don't have any ideas yet to determine if the bookId is duplicated.
+
+3. 
