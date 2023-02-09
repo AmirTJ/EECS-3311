@@ -8,26 +8,26 @@ public class BookSearch extends booksOrganization {
 
     public Book searchById(String Id) {
         for (Book book : bookShelf) {
-            if (book.getBookId().equals(Id)) {
+            if (book.getBookId().equalsIgnorCase(Id)) {
                 return book;
             }
         }
-        return null;
+        return ("book not found");
     }
 
     public Book searchByName(String title) {
         for (Book book : bookShelf) {
-            if (book.getBookName().equals(title)) {
+            if (book.getBookName().equalsIgnoreCase(title)) {
                 return book;
             }
         }
-        return null;
+        return ("not found the book");
     }
 
     public ArrayList<Book> searchByAuthor(String author) {
         ArrayList<Book> results = new ArrayList<Book>();
         for (Book book : bookShelf) {
-            if (book.getAuthor().equals(author)) {
+            if (book.getAuthor().equalsIgnoreCase(author)) {
                 results.add(book);
             }
         }
@@ -37,7 +37,7 @@ public class BookSearch extends booksOrganization {
     public ArrayList<Book> searchByCategory(String category) {
         ArrayList<Book> results = new ArrayList<Book>();
         for (Book book : bookShelf) {
-            if (book.getCategory().equals(category)) {
+            if (book.getCategory().equalsIgnoreCase(category)) {
                 results.add(book);
             }
         }
