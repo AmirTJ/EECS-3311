@@ -44,7 +44,7 @@ public class Book {
     }
 
     public void setBookId(String bookId) {
-        this.bookId = bookId; // The latter needs to check that the bookId is unique.
+        this.bookId = bookId;
     }
 
     public void setAuthor(String author) {
