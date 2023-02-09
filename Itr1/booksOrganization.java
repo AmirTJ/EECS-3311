@@ -15,6 +15,14 @@ public class booksOrganization {
 		book.setAuthor(author);
 		book.setCategory(category);
 		book.setPrice(price);
+		for(int i=0;i<bookShelf.size();i++) {
+			Book check = bookShelf.get(i);
+			if(bookId.equals(check.getBookId())) {
+				System.out.print("There has a same book id in the list, please check again!\n");
+				return;
+			}
+			
+		}
 		bookShelf.add(book);
 		System.out.println("Book added successfully!");
 	}
