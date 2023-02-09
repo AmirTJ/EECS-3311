@@ -8,11 +8,12 @@ public class BookSearch extends booksOrganization {
 
     public Book searchById(String Id) {
         for (Book book : bookShelf) {
-            if (book.getBookId().equalsIgnorCase(Id)) {
+            if (book.getBookId().equalsIgnoreCase(Id)) {
+                System.out.println("book found");
                 return book;
             }
-        }
-        return ("book not found");
+        }System.out.println("book not found");
+        return null;
     }
 
     public Book searchByName(String title) {
@@ -21,8 +22,11 @@ public class BookSearch extends booksOrganization {
                 return book;
             }
         }
-        return ("not found the book");
-    }
+       
+    System.out.println("book not found");
+        return null;
+        }
+    
 
     public ArrayList<Book> searchByAuthor(String author) {
         ArrayList<Book> results = new ArrayList<Book>();
@@ -72,4 +76,9 @@ public class BookSearch extends booksOrganization {
      * }
      * }
      */
+    public static void main (String []args){
+		BookSearch bb=new BookSearch();
+       
+        bb.searchById("hh2");
+	}
 }
