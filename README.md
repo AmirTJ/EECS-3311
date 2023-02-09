@@ -35,6 +35,6 @@ A Library Management System (LMS) is a software application for organizing and m
 #### BSR
 > This class allows users to choose between three options: 1) book a room, 2) check the availability of rooms, and 3) exit the process. The system tracks the availability of 10 rooms using a boolean array. If a room is available, the user can reserve it by entering the room number. The system will then print either a successful booking message or an error message if the room is already booked or if the entered room number is invalid.
 
+### Here are some links to the UML diagrams of classes explained above
 
-[THis is A link](https://www.google.com/webhp?authuser=1)
 
