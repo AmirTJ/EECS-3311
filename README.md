@@ -39,6 +39,7 @@ A Library Management System (LMS) is a software application for organizing and m
 * [Book UML](https://drive.google.com/file/d/1Ie8lqg8Q2PyZ7Nskxg1GUPvKBxuqIadu/view?usp=share_link)
 * [BookSearch UML](https://drive.google.com/file/d/1_ZHp9gKoaUj5gTr57Ji5wvugpJNGnEnF/view?usp=share_link)
 * [BSR BookingStudyRoom UML](https://1drv.ms/u/s!ApjPTpRjtQF0ylcAVZ-gUwvYQdby?e=PsaRgV)
+* [booksOrganization UML](https://drive.google.com/file/d/1UyWOcrv5Uz0oB5oZYCP1FU3hzafjCo0e/view?usp=sharing)
 
 
 
