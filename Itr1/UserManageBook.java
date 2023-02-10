@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class UserManageBook {
 
@@ -17,6 +18,7 @@ public class UserManageBook {
             switch (ch) {
                 case 1:
                     System.out.println("Add book\n");
+                     try {
                     Scanner sid = new Scanner(System.in);
                     Scanner satu = new Scanner(System.in);
                     Scanner sname = new Scanner(System.in);
@@ -29,6 +31,10 @@ public class UserManageBook {
                     String category = scategory.nextLine();
                     double price = spr.nextDouble();
                     manage.addBooks(name, id, atu, category, price);
+                         }catch(InputMismatchException e) {
+                    	System.out.println("Wrong enter, please try again");
+                    	break;
+                    }
                     break;
 
                 case 2:
