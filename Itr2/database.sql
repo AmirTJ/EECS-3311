@@ -15,3 +15,15 @@ roomNumber int(10) not null,
 BookingId int (9) not null,
 BookingName varchar(1000) not null
 );
+
+create table Student (
+	Student_ID INT NOT NULL,
+    UserPassword VARCHAR(255),
+    PRIMARY KEY(Student_ID)
+);
+
+create TABLE DevTeam (
+	DevTeam_ID INT NOT NULL,
+    UserPassword VARCHAR(255),
+    PRIMARY KEY(DevTeam_ID)
+);
