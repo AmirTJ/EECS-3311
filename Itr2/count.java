@@ -21,6 +21,7 @@ public class count extends User{
             PreparedStatement pt = connection.prepareStatement(sql);
             ArrayList<User> users = new ArrayList<>(); // add user function
             users.add(new User("w", "2w", "student"));
+            users.add(new User ("2w","2","admin"));
             
             for(User user : users){
                 pt.setString(1, user.getUsername());
