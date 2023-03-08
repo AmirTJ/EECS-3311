@@ -3,9 +3,9 @@
 import java.sql.*;
 
 public class BookSearch extends booksOrganization {
-    private static final String URL = "jdbc:mysql://localhost:3306/library";
-    private static final String USER = "username";
-    private static final String PASSWORD = "password";
+    private static final String URL = "jdbc:mysql://localhost:3306/library"; // localhost:3306 - change here if needed
+    private static final String USER = "root"; // use your own user name here
+    private static final String PASSWORD = "123456"; // use your own password
     private Connection connection;
     public BookSearch() {
         super();
