@@ -19,14 +19,11 @@ BookingName varchar(1000) not null,
 Bookingtime timestamp default current_timestamp on update current_timestamp
 );
 
-create table Student (
-	Student_ID INT NOT NULL,
-    UserPassword VARCHAR(255),
-    PRIMARY KEY(Student_ID)
+CREATE TABLE users (
+  id INT primary key AUTO_INCREMENT,
+  username VARCHAR(150) NOT NULL,
+  password VARCHAR(150) NOT NULL,
+  role ENUM('student', 'admin') NOT NULL,
 );
 
-create TABLE DevTeam (
-	DevTeam_ID INT NOT NULL,
-    UserPassword VARCHAR(255),
-    PRIMARY KEY(DevTeam_ID)
-);
+
