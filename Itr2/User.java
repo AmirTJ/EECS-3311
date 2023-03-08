@@ -1,5 +1,5 @@
 package Itr2;
-import java.util.*;
+
 
 public class User{
     private String username;
@@ -24,5 +24,6 @@ public class User{
       return role;
     }
 
-    List<User> user = new ArrayList<>();
+    
+    
 }
