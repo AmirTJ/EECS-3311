@@ -41,5 +41,19 @@ A Library Management System (LMS) is a software application for organizing and m
 * [BSR BookingStudyRoom UML](https://1drv.ms/u/s!ApjPTpRjtQF0ylcAVZ-gUwvYQdby?e=PsaRgV)
 * [booksOrganization UML](https://drive.google.com/file/d/1UyWOcrv5Uz0oB5oZYCP1FU3hzafjCo0e/view?usp=sharing)
 
+### Itr2
+### Classes 
+* Borrow
+* StudentAccount
+* User
+* Account
+* Tests ( Containing all test classes )
+
+####Borrow
+> This Java class named "Borrow" represents a book borrowed from a library. It contains instance variables for the book's title, author, borrowed status, borrowed date, and due date. It also provides several methods to manipulate the book's borrowed status and due date.
+
+* StudentAccount | Account | User
+> Used to insert data into Database such as username, password, roll and etc.
 
 
+* There are main GUI's used as Login fo TA's and QA team which is called AdminLogin and allows the admin to log in with the username "3311" and password "pass" then they will get redirected to another page which allows them to add books and prices to the DB.
