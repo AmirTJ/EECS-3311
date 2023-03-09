@@ -4,12 +4,13 @@ import java.util.*;
 
 
 
-public class count extends User{
+public class acccount extends User{
 
-    public count(String username, String password, String role) {
-        super(username, password, role);
-       
-    }
+    public acccount(String username, String password, String role) {
+		super(username, password, role);
+	
+	}
+	
     public static void main(String[] args){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
