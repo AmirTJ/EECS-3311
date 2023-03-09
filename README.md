@@ -49,10 +49,10 @@ A Library Management System (LMS) is a software application for organizing and m
 * Account
 * Tests ( Containing all test classes )
 
-####Borrow
+#### Borrow
 > This Java class named "Borrow" represents a book borrowed from a library. It contains instance variables for the book's title, author, borrowed status, borrowed date, and due date. It also provides several methods to manipulate the book's borrowed status and due date.
 
-* StudentAccount | Account | User
+#### StudentAccount | Account | User
 > Used to insert data into Database such as username, password, roll and etc.
 
 
