@@ -40,9 +40,7 @@ public class JUnitTest {
 		assertEquals("Tony", books.get(2).getAuthor());
 		assertEquals("History", books.get(2).getCategory());
 		assertEquals(8.99, books.get(2).getPrice(), 0.001);
-		bookOrg.deleteBooks("ShangHai history", "002");
-		bookOrg.deleteBooks("GuangZhou history", "003");
-		bookOrg.deleteBooks("BeiJing history", "004");
+		
 	}
 	
 	@Test
