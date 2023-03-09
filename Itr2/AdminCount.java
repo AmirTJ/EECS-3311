@@ -7,7 +7,7 @@ public class AdminCount {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url="jdbc:mysql://localhost:3306/library"; // localhost:3306 - change here if needed
             String user="root"; // use your own user name here
-            String password="123456"; // use your own password 
+            String password="123456"; // use your own password
             Connection connection = DriverManager.getConnection(url, user, password);
             Statement st = connection.createStatement();
             String sql = "SELECT username, password FROM users WHERE role = 'admin'";
