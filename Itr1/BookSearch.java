@@ -18,19 +18,19 @@ public class BookSearch extends booksOrganization {
 
     public Book searchById(String Id) {
         try{
-            String query = "SELECT * FROM books WHERE book_id=?";
+            String query = "SELECT * FROM book WHERE bookId=?";
             PreparedStatement ps = connection.prepareStatement(query);
             ps.setString(1, Id);
             ResultSet result = ps.executeQuery();
             if (result.next()) {
                 System.out.println("book found");
-                System.out.println("Book Name: " + result.getString("book_name"));
+                System.out.println("Book ID: " + result.getString("bookId"));
+                System.out.println("Book Name: " + result.getString("bookName"));
                 System.out.println("Author: " + result.getString("author"));
-                System.out.println("Book ID: " + result.getString("book_id"));
                 System.out.println("Category: " + result.getString("category"));
                 System.out.println("Price: " + result.getDouble("price"));
-                return new Book(result.getString("book_name"), result.getString("author"),
-                        result.getString("book_id"), result.getString("category"), result.getDouble("price"));
+                return new Book(result.getString("bookName"), result.getString("author"),
+                result.getString("bookId"), result.getString("category"), result.getDouble("price"));
             }
       }   
      catch (Exception e) {
@@ -42,20 +42,20 @@ public class BookSearch extends booksOrganization {
 
     public Book searchByName(String title) {
         try {
-            String query = "SELECT * FROM books WHERE book_name=?";
+            String query = "SELECT * FROM book WHERE bookName=?";
             PreparedStatement ps = connection.prepareStatement(query);
             ps.setString(1, title);
             ResultSet result = ps.executeQuery();
 
             if (result.next()) {
                 System.out.println("book found");
-                System.out.println("Book Name: " + result.getString("book_name"));
+                System.out.println("Book ID: " + result.getString("bookId"));
+                System.out.println("Book Name: " + result.getString("bookName"));
                 System.out.println("Author: " + result.getString("author"));
-                System.out.println("Book ID: " + result.getString("book_id"));
                 System.out.println("Category: " + result.getString("category"));
                 System.out.println("Price: " + result.getDouble("price"));
-                return new Book(result.getString("book_name"), result.getString("author"),
-                        result.getString("book_id"), result.getString("category"), result.getDouble("price"));
+                return new Book(result.getString("bookName"), result.getString("author"),
+                result.getString("bookId"), result.getString("category"), result.getDouble("price"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -68,20 +68,20 @@ public class BookSearch extends booksOrganization {
 
         public Book searchByAuthor(String author) {
             try {
-                String query = "SELECT * FROM books WHERE author=?";
+                String query = "SELECT * FROM book WHERE author=?";
                 PreparedStatement ps = connection.prepareStatement(query);
                 ps.setString(1, author);
                 ResultSet result = ps.executeQuery();
     
                 if (result.next()) {
-                    System.out.println("book found");
-                    System.out.println("Book Name: " + result.getString("book_name"));
-                    System.out.println("Author: " + result.getString("author"));
-                    System.out.println("Book ID: " + result.getString("book_id"));
-                    System.out.println("Category: " + result.getString("category"));
-                    System.out.println("Price: " + result.getDouble("price"));
-                    return new Book(result.getString("book_name"), result.getString("author"),
-                            result.getString("book_id"), result.getString("category"), result.getDouble("price"));
+                System.out.println("book found");
+                System.out.println("Book ID: " + result.getString("bookId"));
+                System.out.println("Book Name: " + result.getString("bookName"));
+                System.out.println("Author: " + result.getString("author"));
+                System.out.println("Category: " + result.getString("category"));
+                System.out.println("Price: " + result.getDouble("price"));
+                return new Book(result.getString("bookName"), result.getString("author"),
+                result.getString("bookId"), result.getString("category"), result.getDouble("price"));
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -96,20 +96,20 @@ public class BookSearch extends booksOrganization {
 
          public Book searchByCategory(String category) {
             try {
-                String query = "SELECT * FROM books WHERE book_category=?";
+                String query = "SELECT * FROM book WHERE category=?";
                 PreparedStatement ps = connection.prepareStatement(query);
                 ps.setString(1, category);
                 ResultSet result = ps.executeQuery();
     
                 if (result.next()) {
                     System.out.println("book found");
-                    System.out.println("Book Name: " + result.getString("book_name"));
+                    System.out.println("Book ID: " + result.getString("bookId"));
+                    System.out.println("Book Name: " + result.getString("bookName"));
                     System.out.println("Author: " + result.getString("author"));
-                    System.out.println("Book ID: " + result.getString("book_id"));
                     System.out.println("Category: " + result.getString("category"));
                     System.out.println("Price: " + result.getDouble("price"));
-                    return new Book(result.getString("book_name"), result.getString("author"),
-                            result.getString("book_id"), result.getString("category"), result.getDouble("price"));
+                    return new Book(result.getString("bookName"), result.getString("author"),
+                    result.getString("bookId"), result.getString("category"), result.getDouble("price"));
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
