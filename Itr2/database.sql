@@ -7,6 +7,7 @@ create table Book(
  author varchar (1000) not null,
  category varchar (1000) not null,
  price varchar(1000) not null,
+ lend int not null,
  borrowTime datetime not null,
  returnTime datetime default null
 );
