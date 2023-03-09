@@ -57,3 +57,5 @@ A Library Management System (LMS) is a software application for organizing and m
 
 
 * There are main GUI's used as Login fo TA's and QA team which is called AdminLogin and allows the admin to log in with the username "3311" and password "pass" then they will get redirected to another page which allows them to add books and prices to the DB.
+
+> Also the LibraryGUI has information provided for the user in case they need to know how some of the processes are done or what are the business hours of the library.
