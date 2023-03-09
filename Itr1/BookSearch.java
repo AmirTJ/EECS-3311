@@ -29,8 +29,9 @@ public class BookSearch extends booksOrganization {
                 System.out.println("Author: " + result.getString("author"));
                 System.out.println("Category: " + result.getString("category"));
                 System.out.println("Price: " + result.getDouble("price"));
+                System.out.println("lent(if show 1 means not in the bookshelf, if shows 0 means exsit: " + getInt("lent") );
                 return new Book(result.getString("bookName"), result.getString("author"),
-                result.getString("bookId"), result.getString("category"), result.getDouble("price"));
+                result.getString("bookId"), result.getString("category"), result.getDouble("price"),getInt("lent"));
             }
       }   
      catch (Exception e) {
