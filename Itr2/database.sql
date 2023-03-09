@@ -23,7 +23,7 @@ CREATE TABLE users (
   id INT primary key AUTO_INCREMENT,
   username VARCHAR(150) NOT NULL,
   password VARCHAR(150) NOT NULL,
-  role ENUM('student', 'admin') NOT NULL,
+  role ENUM('student', 'admin') NOT NULL
 );
 
 
