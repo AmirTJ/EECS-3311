@@ -1,6 +1,6 @@
 package Itr2;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+import static org.junit.Assert.assertNotEquals;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -48,8 +48,30 @@ public class IntegrationTest{
         assertEquals(author, book.getAuthor());
         assertEquals(category, book.getCategory());
         assertEquals(price, book.getPrice());
+        library.removeAllbooks();
     }
 
+    
+    @Test
+    public void testAddThreeBook() throws SQLException {
+        
+
+        library.addBooks("Chinese History", "001", "Tony", "History", 8.99);
+        library.addBooks("GuangZhou History", "002", "Tony", "History", 9.99);
+        library.addBooks("ShanDong History", "003", "Tony", "History", 10.99);
+
+        ArrayList<Book> books = library.getBooks();
+        assertEquals(3, books.size());
+
+        Book book = books.get(1);
+        assertEquals("GuangZhou History", book.getBookName());
+        assertEquals("002", book.getBookId());
+        assertEquals("Tony", book.getAuthor());
+        assertEquals("History", book.getCategory());
+        assertEquals(9.99, book.getPrice());
+        library.removeAllbooks();
+    }
+    
     @Test
     public void testDeleteBook() throws SQLException {
         String bookName = "Chinese History";
@@ -60,6 +82,28 @@ public class IntegrationTest{
 
         ArrayList<Book> books = library.getBooks();
         assertEquals(0, books.size());
+        library.removeAllbooks();
+    }
+    
+    @Test
+    public void testDeleteSecondBookInThreeBooks() throws SQLException {
+    	  library.addBooks("Chinese History", "001", "Tony", "History", 8.99);
+          library.addBooks("GuangZhou History", "002", "Tony", "History", 9.99);
+          library.addBooks("ShanDong History", "003", "Tony", "History", 10.99);
+
+      
+        library.deleteBooks("GuangZhou History", "002");
+
+        ArrayList<Book> books = library.getBooks();
+        assertEquals(2, books.size());
+        Book book = books.get(1);
+        assertEquals("ShanDong History", book.getBookName());
+        assertNotEquals("GuangZhou History", book.getBookName());
+        assertNotEquals("002", book.getBookId());
+        assertEquals("Tony", book.getAuthor());
+        assertEquals("History", book.getCategory());
+        assertEquals(10.99, book.getPrice());
+        library.removeAllbooks();
     }
 
     @Test
@@ -77,6 +121,7 @@ public class IntegrationTest{
         resultSet.next();
         int count = resultSet.getInt(1);
         assertEquals(0, count);
+        library.removeAllbooks();
     }
 
     @AfterAll
