@@ -1,14 +1,11 @@
-package Itr2.GUIs;
+package Itr2;
+
 import javax.swing.*;
-import Itr1.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
 
 public class BookGUI extends JFrame {
-	private String url="jdbc:mysql://localhost:3306/library"; // localhost:3306 - change here if needed
-	private String user="root"; // use your own user name here
-	private String password="123456"; // use your own password
     private Connection conn;
     private Book book;
     private JTextField bookIdField;
@@ -63,10 +60,13 @@ public class BookGUI extends JFrame {
         getContentPane().add(panel);
 
         try {
-        	//Class.forName("com.mysql.cj.jdbc.Driver");
+            String url = "jdbc:mysql://localhost:3306/library";
+            String user = "root";
+            String password = "123456";
             conn = DriverManager.getConnection(url, user, password);
-        } catch (/*ClassNotFoundException |*/ SQLException e) {
-            e.printStackTrace();
+            System.out.println("Connected to database.");
+        } catch (SQLException ex) {
+            ex.printStackTrace();
         }
     }
 
