@@ -1,0 +1,44 @@
+Meeting Discussion Topics:
+View Demo (Can give any immediate feedback if it comes to mind)
+UI Changes:
+Be able to search based on multiple criteria at the same time (Ex: Search based on author and name of book)
+
+Application Purpose/Design:
+Should the application be used by both the library admin and regular users?
+If yes: 
+Need secure login for library admin
+Application must be split to give both admin and user settings. This likely means having 2 separate GUIs or admin’s GUI will extend the view of the basic user GUI.
+Likely need 2 DB (1 for user and 1 for admin). May have some overlapping functionality, but they need to read/write new data.
+If no:
+Can focus on the regular user side and have the library as a static (non-changing) database. However, some basic maintenance of user bookings will likely need to be done (late/no-shows, expired bookings, etc)
+Can focus on just library management (adding books and managing rooms), but this will likely be a very limited simple app.
+Contradictory User Stories in Iteration 3: Being able to borrow books, but also they can be priced and bought?
+Choose either if this library is lending or selling books. Ideally it only allows lending/borrowing books like a regular library.
+Having price is only useful for tracking library expenses. In this case, there may be a feature to give a report on library expenses which can be grouped by book category/genre
+
+App Timeline:
+Iteration 2’s main feature is just booking computers, FAQ and business hours only display static content.
+If we have an admin-side application, we can allow for additions and modifications to FAQ/business hours
+Otherwise, borrow/returning book functionality is very important and should be prioritised 
+Should try to implement a login system sooner to establish a userbase to store user data
+
+Feature Suggestions:
+Maybe a notification feature when rooms become available 
+Extension: Create a waitlist for room 
+[High Priority] Ability to:
+Renew: extend borrow duration
+Put books on hold: reserve a book for yourself, so the library will take it off the shelf and place it somewhere where you can pick it up. No one will be able to borrow it in the meantime. After some time, if you don’t pick it up, then the “hold” is expired and the book is placed on shelf again.
+[High Priority] Set borrow duration for books and keep track of remaining time.
+List a user’s bookings (borrowed books and/or booked rooms/resources) 
+Set booking durations for users (with limit)
+Cancel bookings if user doesn’t show up.
+[High Priority] Log in system: 
+To promote security
+So a user can keep track of their own activities and their bookings
+A resource that could prove helpful in discerning whether the person is an admin or a user. (resource is from the slides from the professors lectures there is a video explanation) 
+https://www.newthinktank.com/2012/08/strategy-design-pattern-tutorial/ 
+Show next available time slot instead of just seeing if room is booked (This is already in planning document)
+Library Fines for Borrowing beyond allowed time
+Assign number of copies of each book
+Current library capacity/ how busy is the library at a certain time
+ISBN Search
