@@ -171,12 +171,4 @@ public class BookSearch extends booksOrganization {
                 return null;
                 }
 
-  
-
-   
-    public static void main (String []args){
-		BookSearch bb=new BookSearch();
-       
-        bb.searchByID("hh2");
-	}
 }
