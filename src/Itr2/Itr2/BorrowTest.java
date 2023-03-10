@@ -16,14 +16,14 @@ public class BorrowTest {
     private User user;
     private LocalDate borrowDate;
     private LocalDate returnDate;
-    private Borrow borrow;
+    private Borrow2 borrow;
 
     @Before
     public void setup() {
         book = new Book("1234", "The Great Gatsby", "F. Scott Fitzgerald", "Fiction", 9.99);
         user = new User("John Smith", "jsmith123", "password");
         borrowDate = LocalDate.now();
-        borrow = new Borrow(book, user, borrowDate);
+        borrow = new Borrow2(book, user, borrowDate);
     }
 
     @Test
