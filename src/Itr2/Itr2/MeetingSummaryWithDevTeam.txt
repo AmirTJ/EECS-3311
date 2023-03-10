@@ -1,0 +1,26 @@
+Date: Feb 16, 2023
+Time: 12:30 PM - 1:20 PM
+Attendees:
+ • Dev Team: group 11
+ • Clients: group 12
+Meeting Agenda:
+ • Review the progress of the project.
+ • Discuss the suggestions made by the Dev Team regarding the code.
+ • Share any concerns and suggestions.
+Meeting Summary:
+The meeting started with a review of the progress of the project. 
+Dev manager informed the clients that the development team had completed the basic functionalities of the banking application, including user registration, login, and transaction history. 
+He also mentioned that the team had completed the integration of payment gateways and was now working on implementing new features.
+The clients appreciated the team's efforts and asked for a demo of the current version of the application. 
+The manager shared the demo link, and the clients took a few minutes to explore the application.
+After the demo, the manager began discussing the suggestions made by the development team regarding the code. 
+He explained that while the team had followed the best practices for coding, there were still some areas that could be improved.
+one of the group members suggested implementing a better data validation process to ensure that the user inputs were accurate and secure. 
+One of the clients recommended optimizing the code to improve the application's performance, and other client suggested conducting more thorough testing to ensure the application's quality.
+The Dev team appreciated the suggestions and asked for more details. 
+Amirreza explained that the team would use regular expressions to validate user inputs, which would reduce the risk of SQL injections and other vulnerabilities. 
+He also mentioned that the team would use caching mechanisms and database indexing to improve the application's performance.
+The clients were satisfied with the suggestions and thanked the team for their efforts. 
+They also shared a few suggestions of their own, which the team noted down for future implementation.
+In conclusion, the meeting was productive, and both parties had a better understanding of the project's progress and the areas that needed improvement. 
+The development team would work on the suggestions and provide updates to the clients in the next meeting.
