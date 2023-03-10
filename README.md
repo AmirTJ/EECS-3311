@@ -42,6 +42,7 @@ A Library Management System (LMS) is a software application for organizing and m
 * [booksOrganization UML](https://drive.google.com/file/d/1UyWOcrv5Uz0oB5oZYCP1FU3hzafjCo0e/view?usp=sharing)
 
 ### Itr2
+(Attention, you need to use junit 5 here. And need to add external JARs, SQL connector in build path.)
 ### Classes 
 * Borrow
 * StudentAccount
