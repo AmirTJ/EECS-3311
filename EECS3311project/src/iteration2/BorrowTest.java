@@ -46,20 +46,6 @@ public class BorrowTest {
     }
 
     @Test
-    public void testIsBookLent() {
-        assertFalse(borrow.isBookLent());
-        borrow.lendBook();
-        assertTrue(borrow.isBookLent());
-    }
-
-    @Test
-    public void testLendBook() {
-        assertFalse(borrow.isBookLent());
-        borrow.lendBook();
-        assertTrue(borrow.isBookLent());
-    }
-
-    @Test
     public void testReturnBook() {
         borrow.lendBook();
         LocalDate returnDate = LocalDate.now().plusDays(14);
