@@ -1,0 +1,5 @@
+1. We started by creating four tables: Book, Bookingroom, Student account, and DevTeam account. And we added column names to each table.
+
+2. Then we decided to put the Student account and the DevTeam account in one table to be the database.
+
+3. Add a column in the table of books for whether the book has been borrowed or not.
