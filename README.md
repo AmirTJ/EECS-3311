@@ -61,3 +61,7 @@ A Library Management System (LMS) is a software application for organizing and m
 > Also the LibraryGUI has information provided for the user in case they need to know how some of the processes are done or what are the business hours of the library.
 
 > New user stories that our cleint suggested are Borrowing books and the extension of the duration for which users are able to do that but has a limit to it.
+
+#### Tests
+There three test java class in itr2. All of the method had been tested. In JUnitTest.java, we basically test the method by "stub" database which is arraylist. In 
+IterationTest.java, we test the method by real database with MYSQL.
