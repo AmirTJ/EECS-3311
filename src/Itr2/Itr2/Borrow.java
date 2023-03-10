@@ -1,66 +1,51 @@
-package Itr2.Itr2;
+package Itr2;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 public class Borrow {
- 
-     private String title;
-     private String author;
-     private boolean borrowed;
-     private Date borrowedDate;
-     private Date dueDate;
-     
-     public Borrow(String title, String author) {
-         this.title = title;
-         this.author = author;
-         this.borrowed = false;
-         this.borrowedDate = null;
-         this.dueDate = null;
-     }
-     
-     public String getTitle() {
-         return title;
-     }
-     
-     public String getAuthor() {
-         return author;
-     }
-     
-     public boolean isBorrowed() {
-         return borrowed;
-     }
-     
-     public Date getBorrowedDate() {
-         return borrowedDate;
-     }
-     
-     public Date getDueDate() {
-         return dueDate;
-     }
-     
-     public void borrowBook() {
-         if (borrowed) {
-             System.out.println("Sorry, this book is already borrowed.");
-         } else {
-             borrowed = true;
-             borrowedDate = new Date();
-             dueDate = new Date(borrowedDate.getTime() + (7 * 24 * 60 * 60 * 1000)); // 7 days from borrowedDate
-             System.out.println("Book borrowed successfully. Please return it by " + dueDate);
-         }
-     }
-     
-     public void extendDueDate(int days) {
-         if (borrowed) {
-             dueDate = new Date(dueDate.getTime() + (days * 24 * 60 * 60 * 1000));
-             System.out.println("Due date extended successfully. Please return the book by " + dueDate);
-         } else {
-             System.out.println("Sorry, this book is not borrowed yet.");
-         }
-     }
-     
-     public void returnBook() {
-         borrowed = false;
-         borrowedDate = null;
-         dueDate = null;
-         System.out.println("Book returned successfully.");
-     }
- }
+    private Book book;
+    private User user;
+    private LocalDate borrowDate;
+    private LocalDate returnDate;
+
+    public Borrow(Book book, User user, LocalDate borrowDate) {
+        this.book = book;
+        this.user = user;
+        this.borrowDate = borrowDate;
+    }
+
+    public Book getBook() {
+        return book;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public LocalDate getBorrowDate() {
+        return borrowDate;
+    }
+
+    public LocalDate getReturnDate() {
+        return returnDate;
+    }
+
+    public boolean isBookLent() {
+        return book.getLend() == 1;
+    }
+
+    public void lendBook() {
+        book.setLend(1);
+    }
+
+    public void returnBook(LocalDate returnDate) {
+        book.setLend(0);
+        this.returnDate = returnDate;
+    }
+
+    public void extendBorrow() {
+        LocalDate newReturnDate = returnDate.plusDays(7); // extend for 7 days
+        book.setLend(1);
+        this.returnDate = newReturnDate;
+    }
+}
