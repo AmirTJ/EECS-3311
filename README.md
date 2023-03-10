@@ -67,3 +67,5 @@ A Library Management System (LMS) is a software application for organizing and m
 IterationTest.java, we test the method by real database with MYSQL. Lastly, in BorrowBookTest, we test all method.
 
 > For Test java class, we need few more libraries. We need juint-jupiter-api-5.9.2.jar and junit-platform-commons-1.9.2.jar and JUnit 5 to make the Test java class works.
+
+> And need to change the MYSQL password in IntegrationTest.java before use it.
