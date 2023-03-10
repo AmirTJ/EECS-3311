@@ -13,3 +13,8 @@ Yunfei cao log:
 
 2.The day 2, to make sure this code follow the solid principles, we do some change of this code, so we just submit the final version, this spend us 1 day. And we upload 
 it to the Github.
+
+Chenxi Liu:
+1. I first try to connect addBooks method in the booksOrganization class to the database MySQL, and it works fine passing a few testing code.
+
+2. Then, I linked whole booksOrganization class to MySQL, also they work fine passing a few testing code.
