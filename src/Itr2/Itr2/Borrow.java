@@ -12,6 +12,7 @@ public class Borrow {
         this.book = book;
         this.user = user;
         this.borrowDate = borrowDate;
+        lendBook();
     }
 
     public Book getBook() {
