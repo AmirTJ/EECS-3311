@@ -63,7 +63,7 @@ A Library Management System (LMS) is a software application for organizing and m
 > New user stories that our cleint suggested are Borrowing books and the extension of the duration for which users are able to do that but has a limit to it.
 
 #### Tests
-> There three test java class in itr2. All of the method had been tested. In JUnitTest.java, we basically test the method by "stub" database which is arraylist. In 
+> There are three test java class in itr2. All of the method had been tested. In JUnitTest.java, we basically test the method by "stub" database which is arraylist. In 
 IterationTest.java, we test the method by real database with MYSQL. Lastly, in BorrowBookTest, we test all method.
 
 > For Test java class, we need few more libraries. We need juint-jupiter-api-5.9.2.jar and junit-platform-commons-1.9.2.jar and JUnit 5 to make the Test java class works.
