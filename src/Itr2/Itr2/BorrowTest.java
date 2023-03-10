@@ -1,111 +1,91 @@
-package Itr2.Itr2;
-import static org.junit.jupiter.api.Assertions.*;
+package Itr2;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
-import java.util.Date;
+import java.time.LocalDate;
+
+import org.junit.Before;
+import org.junit.Test;
 
 public class BorrowTest {
-    @Test
-    public void testBorrowBook() {
-        Borrow book = new Borrow("Amir", "Solab");
-        book.borrowBook();
-        assertTrue(book.isBorrowed());
-        assertNotNull(book.getBorrowedDate());
-        assertNotNull(book.getDueDate());
-    }
-    @Test
-    public void testBorrowBook2() {
-        Borrow book = new Borrow("Ammir", "Kola");
-        book.borrowBook();
-        assertTrue(book.isBorrowed());
+
+    private Book book;
+    private User user;
+    private LocalDate borrowDate;
+    private LocalDate returnDate;
+    private Borrow borrow;
+
+    @Before
+    public void setup() {
+        book = new Book("1234", "The Great Gatsby", "F. Scott Fitzgerald", "Fiction", 9.99);
+        user = new User("John Smith", "jsmith123", "password");
+        borrowDate = LocalDate.now();
+        borrow = new Borrow(book, user, borrowDate);
     }
 
-    
     @Test
-    public void testExtendDueDate() {
-        Borrow book = new Borrow("sadw", "daef");
-        book.borrowBook();
-        Date oldDueDate = book.getDueDate();
-        book.extendDueDate(3);
-        assertEquals(oldDueDate.getTime() + (3 * 24 * 60 * 60 * 1000), book.getDueDate().getTime());
-    }
-    
-    @Test
-    public void testExtendDueDate2() {
-        Borrow book = new Borrow("asddaw", "daae");
-        book.borrowBook();
-        Date oldDueDate = book.getDueDate();
-        book.extendDueDate(7);
-        Date newDueDate = book.getDueDate();
-        assertNotEquals(oldDueDate, newDueDate);
+    public void testGetBook() {
+        assertEquals(book, borrow.getBook());
     }
 
-   
+    @Test
+    public void testGetUser() {
+        assertEquals(user, borrow.getUser());
+    }
+
+    @Test
+    public void testGetBorrowDate() {
+        assertEquals(borrowDate, borrow.getBorrowDate());
+    }
+
+    @Test
+    public void testIsBookLent() {
+        assertFalse(borrow.isBookLent());
+        borrow.lendBook();
+        assertTrue(borrow.isBookLent());
+    }
+
+    @Test
+    public void testLendBook() {
+        assertFalse(borrow.isBookLent());
+        borrow.lendBook();
+        assertTrue(borrow.isBookLent());
+    }
+
     @Test
     public void testReturnBook() {
-        Borrow book = new Borrow("asdae", "eecs3311");
-        book.borrowBook();
-        book.returnBook();
-        assertFalse(book.isBorrowed());
-        assertNull(book.getBorrowedDate());
-        assertNull(book.getDueDate());
-    }
-    
-
-    @Test
-    public void testBorrowAlreadyBorrowedBook() {
-        Borrow book = new Borrow("caedt", "hi");
-        book.borrowBook();
-        assertTrue(book.isBorrowed());
+        borrow.lendBook();
+        LocalDate returnDate = LocalDate.now().plusDays(14);
+        borrow.returnBook(returnDate);
+        assertFalse(borrow.isBookLent());
+        assertEquals(returnDate, borrow.getReturnDate());
     }
 
-    
+  
+
     @Test
-    public void testExtendDueDateUnborrowedBook() {
-        Borrow book = new Borrow("addwa", "Farankhan");
-        book.extendDueDate(7);
-        assertNull(book.getDueDate());
-    }
-    
-    @Test
-    public void testReturnUnborrowedBook() {
-        Borrow book = new Borrow("Cheshm ghashang", "khoshgel");
-        book.returnBook();
-        assertFalse(book.isBorrowed());
-    }
-    @Test
-    public void testReturnBorrowedBook() {
-        Borrow book = new Borrow("jooon", "asdw");
-        book.borrowBook();
-        book.returnBook();
-        assertFalse(book.isBorrowed());
-    }
-    @Test
-    public void testBorrowedDate() {
-        Borrow book = new Borrow("sdwt", "Pad");
-        book.borrowBook();
-        assertNotNull(book.getBorrowedDate());
-    }
-    @Test
-    public void testUnborrowedDate() {
-        Borrow book = new Borrow("das", "dawd");
-        assertNull(book.getBorrowedDate());
-    }
-    @Test
-    public void testDueDate() {
-        Borrow book = new Borrow("adsw", "adwo");
-        book.borrowBook();
-        assertNotNull(book.getDueDate());
-    }
-    @Test
-    public void testUnborrowedDueDate() {
-        Borrow book = new Borrow("daadw", "assdw");
-        assertNull(book.getDueDate());
+    public void testGetReturnDateBeforeBookReturned() {
+        assertNull(borrow.getReturnDate());
     }
 
- 
+    @Test
+    public void testReturnBookWithoutLending() {
+        LocalDate returnDate = LocalDate.now().plusDays(14);
+        borrow.returnBook(returnDate);
+        assertFalse(borrow.isBookLent());
+        assertEquals(returnDate, borrow.getReturnDate());
+    }
+
+
+    @Test
+    public void testLendBookMultipleTimes() {
+        borrow.lendBook();
+        borrow.lendBook();
+        borrow.lendBook();
+        assertTrue(borrow.isBookLent());
+    }
 
 }
