@@ -1,0 +1,23 @@
+Date: 2023-03-7
+
+Time: 11:00 AM
+
+Subject: Explanation of Borrow class in Itr2 package
+
+The code in this package is a Java program that defines a Borrow class for managing book borrowing in a library or bookstore system.
+
+The Borrow class has four instance variables: a Book object, a User object, a borrowDate object of LocalDate, and a returnDate object of LocalDate.
+
+The constructor of the class takes three arguments: a Book object, a User object, and a borrowDate object of LocalDate. This constructor is used to create a new Borrow object for a given book, user, and borrow date.
+
+The class has several methods that allow manipulation of the book borrow records. The getBook(), getUser(), getBorrowDate(), and getReturnDate() methods are getter methods that return the values of the corresponding instance variables.
+
+The isBookLent() method checks if the book is currently borrowed or not. It returns true if the book has been borrowed, and false otherwise.
+
+The lendBook() method sets the lend flag of the book to 1, indicating that it has been borrowed.
+
+The returnBook(LocalDate returnDate) method sets the lend flag of the book to 0, indicating that the book has been returned, and it also sets the return date of the book.
+
+The extendBorrow() method extends the borrow period of the book by 7 days. It sets the lend flag of the book to 1 and updates the return date of the book.
+
+Overall, this Borrow class provides essential functionality for managing book borrowing records in a library or bookstore system.
