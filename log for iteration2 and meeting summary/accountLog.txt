@@ -1,0 +1,5 @@
+
+In this file, the main purpose of account is to link to the database and add accounts to the database. 
+After that, users can access this account to operate, 
+and the account also distinguishes between administrator and normal user privileges, 
+which makes it easier for administrators to operate the whole system.

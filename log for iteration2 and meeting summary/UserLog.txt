@@ -1,0 +1,5 @@
+
+This User.java as the main file of Itr2 is used to define the user properties, 
+the account name and password in this place is to distinguish between different accounts with different permissions, 
+and as the main function for account.java to inherit the operation. 
+role function as the key function of User.java is to more easily distinguish between different accounts.
