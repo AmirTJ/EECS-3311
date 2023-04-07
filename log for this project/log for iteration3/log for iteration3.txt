@@ -1,2 +1,3 @@
 We make a new book search GUI. And remake the borrow book GUI, it can show the lend status
-of the book right now. All of the GUI  works good. 
+of the book. Besides, we updated the book management GUI. All of the GUI  work good
+right now. 
