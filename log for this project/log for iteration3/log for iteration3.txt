@@ -1,0 +1,2 @@
+We make a new book search GUI. And remake the borrow book GUI, it can show the lend status
+of the book right now. Besides, we linked all the reltaed file to db. All of them works good. 
