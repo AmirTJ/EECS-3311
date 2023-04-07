@@ -71,7 +71,8 @@ IterationTest.java, we test the method by real database with MYSQL. Lastly, in B
 
 > And need to change your own MYSQL password in IntegrationTest.java, BookSearch.java and booksOrganization.java before use the test java file.
 
- ### Itr3 
+ ### Itr3 (Attention, you need to change your own MYSQL password and user name in IntegrationTest.java, BookSearch.java, booksOrganization.java, Book.java,account.java
+ AdminCount.java, Borrow.java and StudentCount.java before using it.
  ( In this iteration many modifications have been made to the code and the Database ) 
  
  > The borrow GUI updated
@@ -82,14 +83,14 @@ IterationTest.java, we test the method by real database with MYSQL. Lastly, in B
  
  > Design issues solved such as not using a builder design using refactoring
   
- > meke the system to be end-2-end
+ > make the system to be end-2-end
  ### User stories
  
- >finsih delete, add, remove all, show all information and borrow statu of the book. 
+ >Finsih delete, add, remove all, show all information and borrow statu of the book. 
  
- >finish show bunssines hour and policy of the library
+ >Finish show bunssines hour and policy of the library
  
- >finish the searh book and borrow book.
+ >Finish the searh book and borrow book.
  
  #### Refactorings 
  
