@@ -70,3 +70,16 @@ IterationTest.java, we test the method by real database with MYSQL. Lastly, in B
 > For Test java class, we need few more libraries. We need juint-jupiter-api-5.9.2.jar and junit-platform-commons-1.9.2.jar and JUnit 5 to make the Test java class works.
 
 > And need to change your own MYSQL password in IntegrationTest.java, BookSearch.java and booksOrganization.java before use the test java file.
+
+ ### Itr3 
+ ( In this iteration many modifications have been made to the code and the Database ) 
+ 
+ > The borrow GUI updated
+ 
+ > Search Method Updated and used in borrow
+ 
+ > refactoring used in data base and some user interfaces
+ 
+ > Design issues solved such as not using a builder design using refactoring
+ 
+ 
