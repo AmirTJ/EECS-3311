@@ -81,5 +81,23 @@ IterationTest.java, we test the method by real database with MYSQL. Lastly, in B
  > refactoring used in data base and some user interfaces
  
  > Design issues solved such as not using a builder design using refactoring
+  
+ > meke the system to be end-2-end
+ ### User stories
  
+ >finsih delete, add, remove all, show all information and borrow statu of the book. 
  
+ >finish show bunssines hour and policy of the library
+ 
+ >finish the searh book and borrow book.
+ 
+ #### Refactorings 
+ 
+ > Code Duplication:
+The actionListener for the lendButton is defined twice, which is unnecessary and can be reduced to one instance. The second instance should be replaced with the extendButton ActionListener. ( BorrowGUI class ) 
+
+> Hardcoded Database Credentials:
+The database URL, username, and password are hardcoded in the code. This is not secure, and it would be better to retrieve these details from a configuration file or environment variables.
+
+> UI Design:
+The UI design can be improved by adding labels to each input field, and the user should be prompted to enter a value if a field is left blank.
