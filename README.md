@@ -73,7 +73,8 @@ IterationTest.java, we test the method by real database with MYSQL. Lastly, in B
 
  ### Itr3 
  (Attention, you need to change your own MYSQL password and user name in IntegrationTest.java, BookSearch.java, booksOrganization.java, Book.java,account.java
- AdminCount.java, Borrow.java and StudentCount.java before using it.
+ AdminCount.java, Borrow.java and StudentCount.java before using it.)
+ 
  ( In this iteration many modifications have been made to the code and the Database ) 
  
  > The borrow GUI updated
