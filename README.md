@@ -81,5 +81,13 @@ IterationTest.java, we test the method by real database with MYSQL. Lastly, in B
  > refactoring used in data base and some user interfaces
  
  > Design issues solved such as not using a builder design using refactoring
+  
+ > meke the system to be end-2-end
+ ### User stories
  
+ >finsih delete, add, remove all, show all information and borrow statu of the book. 
+ 
+ >finish show bunssines hour and policy of the library
+ 
+ >finish the searh book and borrow book.
  
