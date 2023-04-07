@@ -88,7 +88,7 @@ IterationTest.java, we test the method by real database with MYSQL. Lastly, in B
  > make the system to be end-2-end
  ### User stories
  
- >Finsih delete, add, remove all, show all information and borrow statu of the book. 
+ >Finsih delete, add, remove all, show all information and borrow status of the book. 
  
  >Finish show bunssines hour and policy of the library
  
