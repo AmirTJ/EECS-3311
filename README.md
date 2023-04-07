@@ -71,7 +71,8 @@ IterationTest.java, we test the method by real database with MYSQL. Lastly, in B
 
 > And need to change your own MYSQL password in IntegrationTest.java, BookSearch.java and booksOrganization.java before use the test java file.
 
- ### Itr3 (Attention, you need to change your own MYSQL password and user name in IntegrationTest.java, BookSearch.java, booksOrganization.java, Book.java,account.java
+ ### Itr3 
+ (Attention, you need to change your own MYSQL password and user name in IntegrationTest.java, BookSearch.java, booksOrganization.java, Book.java,account.java
  AdminCount.java, Borrow.java and StudentCount.java before using it.
  ( In this iteration many modifications have been made to the code and the Database ) 
  
